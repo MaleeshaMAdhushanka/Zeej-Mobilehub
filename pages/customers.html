@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer-Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/Customer.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                       <img src="/assets/images/4781826_apple_ios_iphone_iphone x_mobile_icon.png" alt="Logo" style="width: 30px;"> <!-- Set icon width -->
+                    </span>
+                    <span class="title">ZeejMobilehub</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/HomePage.html">
+                    <span class="icon">
+                      <img src="/assets/images/8541853_home_icon.png" alt="Home" style="width: 30px;">
+                    </span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/customers.html">
+                    <span class="icon">
+                       <img src="/assets/images/1564534_customer_man_user_account_profile_icon.png" alt="Customer" style="width: 30px;">
+                    </span>
+                    <span class="title">Customers</span>
+                </a>
+            </li>
+            <li>
+                <a href="/POS-System-Project/pages/items.html">
+                    <span class="icon">
+                       <img src="/assets/images/9004847_apps_application_mobile_device_app_icon (2).png" alt="Items" style="width: 30px;">
+                    </span>
+                    <span class="title">Items</span>
+                </a>
+            </li>
+            <li>
+                <a href="/POS-System-Project/pages/orders.html">
+                    <span class="icon">
+                        <img src="/assets/images/7581523_order_confirmation_application_check_smartphone_icon.png" alt="Orders" style="width: 30px;">
+                    </span>
+                    <span class="title">Orders</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                      <img src="/assets/images/settings.png" alt="Settings" style="width: 30px;">
+                    </span>
+                    <span class="title">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="/POS-System-Project/Login.html">
+                    <span class="icon">
+                      <img src="/assets/images/298869_sign_out_icon.png" alt="Sign Out" style="width: 30px;">
+                    </span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Main -->
+    <main class="container mt-5" id="customers_table">
+        <section class="table__header">
+            <h1>Customer's Details</h1>
+            <button type="button" class="btn btn-warning" onclick="openPopup('add')">Add Customer</button>
+            <button type="button" class="btn btn-danger" onclick="openPopup('remove')">Remove Customer</button>
+            <button type="button" class="btn btn-success" onclick="openPopup('update')">Update Customer</button>
+        </section>
+    
+        <!-- Add Customer Popup -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2 id="popup-title">Add Customer</h2>
+                <form id="customerForm">
+                    <div class="form-group">
+                        <label for="customerName">Name</label>
+                        <input type="text" class="form-control" id="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">Phone</label>
+                        <input type="text" class="form-control" id="customerPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerAddress">Address</label>
+                        <input type="text" class="form-control" id="customerAddress" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerNIC">NIC Number</label>
+                        <input type="text" class="form-control" id="customerNIC" required>
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="saveCustomer()">Save</button>
+                    <button type="button" class="btn btn-secondary" onclick="closePopup()">Close</button>
+                </form>
+            </div>
+        </div>
+
+          <!-- Remove Customer Popup -->
+    <div class="popup" id="remove-popup">
+        <div class="popup-content">
+            <h2>Remove Customer</h2>
+            <form id="removeForm">
+                <div class="form-group">
+                    <label for="removeCustomerId">Customer ID</label>
+                    <input type="text" class="form-control" id="removeCustomerId" required>
+                </div>
+                <button type="button" class="btn btn-danger" onclick="removeCustomer()">Remove</button>
+                <button type="button" class="btn btn-secondary" onclick="closeRemovePopup()">Close</button>
+            </form>
+        </div>
+    </div>
+
+     <!-- Update Customer Popup -->
+     <div class="popup" id="update-popup">
+        <div class="popup-content">
+            <h2>Update Customer</h2>
+            <form id="updateForm">
+                <div class="form-group">
+                    <label for="updateCustomerId">Customer ID</label>
+                    <input type="text" class="form-control" id="updateCustomerId" required>
+                </div>
+                <div class="form-group">
+                    <label for="updateCustomerName">Name</label>
+                    <input type="text" class="form-control" id="updateCustomerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="updateCustomerPhone">Phone</label>
+                    <input type="text" class="form-control" id="updateCustomerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="updateCustomerAddress">Address</label>
+                    <input type="text" class="form-control" id="updateCustomerAddress" required>
+                </div>
+                <div class="form-group">
+                    <label for="updateCustomerNIC">NIC Number</label>
+                    <input type="text" class="form-control" id="updateCustomerNIC" required>
+                </div>
+                <button type="button" class="btn btn-success" onclick="updateCustomer()">Update</button>
+                <button type="button" class="btn btn-secondary" onclick="closeUpdatePopup()">Close</button>
+            </form>
+        </div>
+    </div>
+    
+        <section class="table__body mt-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Address</th>
+                        <th>NIC Number</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="customerTableBody">
+                    <!-- Sample data -->
+                    <tr>
+                        <td>1</td>
+                        <td>Dilshan Hettige</td>
+                        <td>Mathara</td>
+                        <td>2004458956</td>
+                        <td>074 987 6543</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Dasun shanka</td>
+                        <td>Kany</td>
+                        <td>19912474589</td>
+                        <td>076 187 4578</td>
+                    </tr>
+                    <!-- More rows as needed -->
+                    <tr>
+                        <td>3</td>
+                        <td>Wanidu Hasarana</td>
+                        <td>Galle</td>
+                        <td>19940876234</td>
+                        <td>076 187 4578</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Pethum Nishshanka</td>
+                        <td>Kaluthara</td>
+                        <td>18912474589</td>
+                        <td>079 243 4987</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Kusal mendis</td>
+                        <td>Colombo</td>
+                        <td>19971247589</td>
+                        <td>073 149 9571</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <script>
+        function openPopup(action) {
+            const addPopup = document.getElementById('popup');
+            const removePopup = document.getElementById('remove-popup');
+            const updatePopup = document.getElementById('update-popup');
+    
+            addPopup.style.display = 'none';
+            removePopup.style.display = 'none';
+            updatePopup.style.display = 'none';
+    
+            if (action === 'add') {
+                document.getElementById('popup-title').textContent = 'Add Customer';
+                document.getElementById('customerForm').reset();
+                addPopup.style.display = 'flex';
+            } else if (action === 'remove') {
+                removePopup.style.display = 'flex';
+            } else if (action === 'update') {
+                updatePopup.style.display = 'flex';
+            }
+        }
+    
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none'; // Hide add customer popup
+        }
+    
+        function closeRemovePopup() {
+            document.getElementById('remove-popup').style.display = 'none'; // Hide remove customer popup
+        }
+    
+        function closeUpdatePopup() {
+            document.getElementById('update-popup').style.display = 'none'; // Hide update customer popup
+        }
+    
+      
+    
+    
+      
+    </script>
+    
+</body>
+</html>
