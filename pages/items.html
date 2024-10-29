@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items-Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/Item.css">
+
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                       <img src="/assets/images/4781826_apple_ios_iphone_iphone x_mobile_icon.png" alt="Logo" style="width: 30px;"> <!-- Set icon width -->
+                    </span>
+                    <span class="title">ZeejMobilehub</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/HomePage.html">
+                    <span class="icon">
+                      <img src="/assets/images/8541853_home_icon.png" alt="Home" style="width: 30px;">
+                    </span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/customers.html">
+                    <span class="icon">
+                       <img src="/assets/images/1564534_customer_man_user_account_profile_icon.png" alt="Customer" style="width: 30px;">
+                    </span>
+                    <span class="title">Customers</span>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/items.html">
+                    <span class="icon">
+                       <img src="/assets/images/9004847_apps_application_mobile_device_app_icon (2).png" alt="Items" style="width: 30px;">
+                    </span>
+                    <span class="title">Items</span>
+                </a>
+            </li>
+            <li>
+                <a href="/POS-System-Project/pages/orders.html">
+                    <span class="icon">
+                        <img src="/assets/images/7581523_order_confirmation_application_check_smartphone_icon.png" alt="Orders" style="width: 30px;">
+                    </span>
+                    <span class="title">Orders</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                      <img src="/assets/images/settings.png" alt="Settings" style="width: 30px;">
+                    </span>
+                    <span class="title">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="/POS-System-Project/Login.html">
+                    <span class="icon">
+                      <img src="/assets/images/298869_sign_out_icon.png" alt="Sign Out" style="width: 30px;">
+                    </span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search here" class="form-control">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+
+            <div class="user">
+                <img src="/assets/images/mylogo.jpg" alt="User" style="width: 40px; border-radius: 50%;">
+            </div>
+        </div>
+
+        <div class="recentCustomers">
+            <div class="cardHeader">
+                <h2>Latest Items</h2>
+            </div>
+
+            <div class="container">
+                <div class="row" id="skillsContainer">
+                 <div class="bar">
+                  <div class="info">
+                    <img src="/assets/images/apple.webp" width="100px"; height="100px" alt="">
+                    <span>Apple IPhone 16</span>
+                  </div>
+                 </div>
+        
+                 <div class="bar">
+                  <div class="info">
+                    <img src="/assets/images/apple2.webp" width="100px"; height="100px" alt="">
+                    <span>Apple IPhone 15</span>
+                  </div>
+                 </div>
+        
+                 <div class="bar">
+                  <div class="info">
+                    <img src="/assets/images/apple4.webp" width="100px"; height="100px" alt="">
+                    <span>Apple IPhone 13</span>
+                  </div>
+                 </div>
+        
+                 <div class="bar">
+                  <div class="info">
+                    <img src="/assets/images/apple5.webp" width="100px"; height="100px" alt="">
+                    <span>Apple IPhone 12</span>
+                  </div>
+                 </div>
+        
+                 <div class="bar">
+                  <div class="info">
+                    <img src="/assets/images/apple6.webp" width="100px"; height="100px" alt="">
+                    <span>Apple IPhone 11</span>
+                  </div>
+                 </div>
+        
+                 <div class="bar">
+                  <div class="info">
+                    <img src="/assets/images/asus.webp" width="100px"; height="100px" alt="">
+                    <span>Asus Rog 8 Pro</span>
+                  </div>
+                 </div>
+        
+                 <div class="bar">
+                  <div class="info">
+                    <img src="/assets/images/asus2.png" width="100px"; height="100px" alt="">
+                    <span>Asus Rog 7 Ultimate </span>
+                  </div>
+                 </div>
+        
+                 <div class="bar">
+                  <div class="info">
+                    <img src="/assets/images/samsung6.jpg" width="100px"; height="100px" alt="">
+                    <span>Samsung Galexy S24</span>
+                  </div>
+                 </div>
+                 <div class="bar">
+                    <div class="info">
+                      <img src="/assets/images/samsun1.png" width="100px"; height="100px" alt="">
+                      <span>Samsung A30s</span>
+                    </div>
+                   </div>
+
+                </div>
+            </div>
+
+          </div>
+
+          
+
+            <h2 class="mt-5">Items Details</h2>
+            <!-- Items Table -->
+            <table class="table table-bordered mt-3">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Brand</th>
+                  <th>Version</th>
+                  <th>Price</th>
+                  <th>Guarantee</th>
+                  <th>Location</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Example Row -->
+                <tr>
+                  <td>1</td>
+                  <td>Apple</td>
+                  <td>IPhone 16</td>
+                  <td>LKR 271,900.00 – LKR 304,900.00</td>
+                  <td>1 Year</td>
+                  <td>Mount Lavinia</td>
+                  <td>
+                    <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#addItemModal">Add</button>
+                    <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeItemModal">Remove</button>
+                    <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#updateItemModal">Update</button>
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Apple</td>
+                    <td>IPhone 15</td>
+                    <td>LKR 212,900.00 – LKR 269,900.0</td>
+                    <td>1 Year</td>
+                    <td>Kandy</td>
+                    <td>
+                      <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#addItemModal">Add</button>
+                      <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeItemModal">Remove</button>
+                      <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#updateItemModal">Update</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Apple</td>
+                    <td> IPhone 13</td>
+                    <td>LKR 168,000.00</td>
+                    <td>1 Year</td>
+                    <td>Colombo</td>
+                    <td>
+                      <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#addItemModal">Add</button>
+                      <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeItemModal">Remove</button>
+                      <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#updateItemModal">Update</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Apple</td>
+                    <td> IPhone 11</td>
+                    <td>LKR 124,900.00 </td>
+                    <td>1 Year</td>
+                    <td>Colombo</td>
+                    <td>
+                      <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#addItemModal">Add</button>
+                      <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeItemModal">Remove</button>
+                      <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#updateItemModal">Update</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>ROG</td>
+                    <td>8Pro Edition</td>
+                    <td>LKR 190,900.00 </td>
+                    <td>2 Year</td>
+                    <td>Galle</td>
+                    <td>
+                      <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#addItemModal">Add</button>
+                      <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeItemModal">Remove</button>
+                      <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#updateItemModal">Update</button>
+                    </td>
+                </tr>
+              </tbody>
+
+              <tr>
+                <td>6</td>
+                <td>ROG</td>
+                <td>7 Edition</td>
+                <td>LKR 180,000.00 </td>
+                <td>2 Year</td>
+                <td>Galle</td>
+                <td>
+                  <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#addItemModal">Add</button>
+                  <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeItemModal">Remove</button>
+                  <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#updateItemModal">Update</button>
+                </td>
+            </tr>
+          </tbody>
+            </table>
+
+          <!-- Add Item Modal -->
+<div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addItemModalLabel">Add Item</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="brand">Brand</label>
+              <input type="text" class="form-control" id="brand">
+            </div>
+            <div class="form-group">
+              <label for="version">Version</label>
+              <input type="text" class="form-control" id="version">
+            </div>
+            <div class="form-group">
+              <label for="price">Price</label>
+              <input type="number" class="form-control" id="price">
+            </div>
+            <div class="form-group">
+              <label for="guarantee">Guarantee</label>
+              <input type="text" class="form-control" id="guarantee">
+            </div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input type="text" class="form-control" id="location">
+            </div>
+            <button type="button" class="btn btn-primary">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Remove Item Modal -->
+<div class="modal fade" id="removeItemModal" tabindex="-1" aria-labelledby="removeItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="removeItemModalLabel">Remove Item</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to remove this item?</p>
+          <button type="button" class="btn btn-danger">Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Update Item Modal -->
+<div class="modal fade" id="updateItemModal" tabindex="-1" aria-labelledby="updateItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="updateItemModalLabel">Update Item</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="brand-update">Brand</label>
+              <input type="text" class="form-control" id="brand-update">
+            </div>
+            <div class="form-group">
+              <label for="version-update">Version</label>
+              <input type="text" class="form-control" id="version-update">
+            </div>
+            <div class="form-group">
+              <label for="price-update">Price</label>
+              <input type="number" class="form-control" id="price-update">
+            </div>
+            <div class="form-group">
+              <label for="guarantee-update">Guarantee</label>
+              <input type="text" class="form-control" id="guarantee-update">
+            </div>
+            <div class="form-group">
+              <label for="location-update">Location</label>
+              <input type="text" class="form-control" id="location-update">
+            </div>
+            <button type="button" class="btn btn-success">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+   
+
+
+    
+</body>
+</html>
