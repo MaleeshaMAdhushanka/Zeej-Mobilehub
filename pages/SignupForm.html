@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="/assets/css/HomePage.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+
+</head>
+
+<body>
+
+    <!-- Burger Button for Mobile -->
+    <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+
+    <!-- Navigation Menu -->
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                       <img src="/assets/images/4781826_apple_ios_iphone_iphone x_mobile_icon.png" alt="Logo" style="width: 30px;"> <!-- Set icon width -->
+                    </span>
+                    <span class="title">Zeej Mobilehub</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="/POS-System-Project/index.html">
+                    <span class="icon">
+                      <img src="/assets/images/8541853_home_icon.png" alt="Home" style="width: 30px;">
+                    </span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/POS-System-Project/pages/customer.html">
+                    <span class="icon">
+                       <img src="/assets/images/1564534_customer_man_user_account_profile_icon.png" alt="Customer" style="width: 30px;">
+                    </span>
+                    <span class="title">Customers</span>
+                </a>
+            </li>
+            <li>
+                <a href="/POS-System-Project/pages/items.html">
+                    <span class="icon">
+                       <img src="/assets/images/9004847_apps_application_mobile_device_app_icon (2).png" alt="Items" style="width: 30px;">
+                    </span>
+                    <span class="title">Items</span>
+                </a>
+            </li>
+            <li>
+                <a href="/POS-System-Project/pages/orders.html">
+                    <span class="icon">
+                        <img src="/assets/images/7581523_order_confirmation_application_check_smartphone_icon.png" alt="Orders" style="width: 30px;">
+                    </span>
+                    <span class="title">Orders</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                      <img src="/assets/images/settings.png" alt="Settings" style="width: 30px;">
+                    </span>
+                    <span class="title">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="/POS-System-Project/Login.html">
+                    <span class="icon">
+                      <img src="/assets/images/298869_sign_out_icon.png" alt="Sign Out" style="width: 30px;">
+                    </span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search here" class="form-control">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+
+            <div class="user">
+                <img src="/assets/images/mylogo.jpg" alt="User" style="width: 40px; border-radius: 50%;">
+            </div>
+        </div>
+
+        <h1 class="text-center">Dashboard</h1>
+        <p class="text-center">Welcome to the Zeej Mobilehub Dashboard!</p>
+        
+        <!-- ======================= section dashboard ================== -->
+        <section class="dashboard" id="dashboard">
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">In Stock</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">$7,842</div>
+                        <div class="cardName">Earnings Daily</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">20</div>
+                        <div class="cardName">Out of Stock</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Order Details List ================= -->
+        <div class="details">
+            <div class="recentOrders">
+                <div class="cardHeader">
+                    <h2>Recent Orders</h2>
+                    <a href="#" class="btn btn-warning">View All</a>
+                </div>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>O001</td>
+                            <td>Kasun</td>
+                            <td>$200</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>O002</td>
+                            <td>Janith</td>
+                            <td>$150</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>O003</td>
+                            <td>Ramesh</td>
+                            <td>$300</td>
+                            <td><span class="status return">Returned</span></td>
+                        </tr>
+                        <tr>
+                            <td>O004</td>
+                            <td>July</td>
+                            <td>$250</td>
+                            <td><span class="status inProgress">In Progress</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle navigation
+        const toggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        const mainContent = document.querySelector('.main-content');
+
+        toggle.onclick = function() {
+            navigation.classList.toggle('active');
+            mainContent.classList.toggle('active');
+        }
+        function toggleNavigation() {
+            const navigation = document.getElementById('navbarNav');
+            navigation.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
