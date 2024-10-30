@@ -1,0 +1,159 @@
+/* General Page Styling */
+body {
+    background-color: #f4f7fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for Order Details */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Card Styling */
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Form Elements Styling */
+  .form-group label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  /* Buttons Styling */
+  .btn-warning {
+    background-color: #f7b924;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-warning:hover {
+    background-color: #d89e1a;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* Table Styling */
+  .table {
+    margin-top: 10px;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+  }
+  
+  .table thead th {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Payment Details Styling */
+  #subtotal, #total, #balance {
+    background-color: #e9ecef;
+    color: #495057;
+  }
+  
+  /* Additional Form Styling for Totals */
+  #total, #subtotal, #balance {
+    font-weight: bold;
+  }
+  
+  #total {
+    color: #28a745;
+  }
+  
+  #balance {
+    color: #007bff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 576px) {
+    .form-row {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .form-group {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #f8f9fa; 
+}
+.navigation {
+    width: 250px;
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    color: #fff;
+}
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+.navigation ul li {
+    margin-bottom: 50px;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+}
+.navigation ul li a:hover {
+    background-color: white;
+    color: black; 
+    width: 120%;
+    border-radius: 12px;
+    height: 100%;
+    /* Hover color */
+}
+
+.icon {
+  margin-right: 15px;
+  font-size: 1.5rem; 
+}
+  
